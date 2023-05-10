@@ -1,0 +1,5 @@
+Liverpool,1
+Chelsea,1
+Manchester United,1
+Manchester City,1
+Arsenal,1

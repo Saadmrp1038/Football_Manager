@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="background" prefHeight="500.0" prefWidth="405.0" stylesheets="@../CSS/LoginPage_StyleSheet.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="saadmrp.Client_FM.LoginScene.Login_Controller">
+   <children>
+      <Label id="title" alignment="CENTER" layoutX="40.0" layoutY="107.0" prefHeight="71.0" prefWidth="332.0" stylesheets="@../CSS/LoginPage_StyleSheet.css" text="FootBall Manager" textFill="#512c2c">
+         <font>
+            <Font name="Leelawadee UI Semilight" size="18.0" />
+         </font>
+      </Label>
+      <VBox layoutX="78.0" layoutY="266.0" prefHeight="59.0" prefWidth="242.0" stylesheets="@../CSS/LoginPage_StyleSheet.css">
+         <children>
+            <HBox prefHeight="46.0" prefWidth="242.0" stylesheets="@../CSS/LoginPage_StyleSheet.css">
+               <children>
+                  <Label id="label" alignment="CENTER" prefHeight="25.0" prefWidth="86.0" stylesheets="@../CSS/LoginPage_StyleSheet.css" text="User Name:">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <TextField fx:id="userNameTF" promptText="Enter Name" stylesheets="@../CSS/LoginPage_StyleSheet.css" />
+               </children>
+            </HBox>
+            <HBox prefHeight="32.0" prefWidth="242.0" stylesheets="@../CSS/LoginPage_StyleSheet.css">
+               <children>
+                  <Label id="label" alignment="CENTER" prefHeight="25.0" prefWidth="86.0" stylesheets="@../CSS/LoginPage_StyleSheet.css" text="Password: ">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <PasswordField fx:id="passwordTF" onAction="#pressedLogin" promptText="Enter Password" stylesheets="@../CSS/LoginPage_StyleSheet.css" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <JFXButton id="button" fx:id="loginBtn" layoutX="124.0" layoutY="401.0" onAction="#pressedLogin" prefHeight="26.0" prefWidth="74.0" stylesheets="@../CSS/LoginPage_StyleSheet.css" text="Login">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="loginLbl" alignment="CENTER" layoutX="93.0" layoutY="223.0" prefHeight="26.0" prefWidth="226.0" stylesheets="@../CSS/LoginPage_StyleSheet.css" text="Label">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Pane prefHeight="71.0" prefWidth="406.0" style="-fx-background-color: #0c067a;" />
+      <Pane layoutX="-1.0" layoutY="-1.0" prefHeight="122.0" prefWidth="406.0">
+         <children>
+            <VBox fx:id="footBall" layoutX="173.0" layoutY="41.0" prefHeight="34.0" prefWidth="42.0">
+               <children>
+                  <ImageView fitHeight="59.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Resources/Football.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <JFXButton id="button" fx:id="resetBtn" layoutX="225.0" layoutY="401.0" onAction="#pressedReset" prefHeight="26.0" prefWidth="74.0" stylesheets="@../CSS/LoginPage_StyleSheet.css" text="Reset">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

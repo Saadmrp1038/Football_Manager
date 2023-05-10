@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="544.0" prefWidth="800.0" style="-fx-border-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="saadmrp.Client_FM.MainScene.Stats_Controller">
+   <children>
+      <ImageView fx:id="bg" fitHeight="544.0" fitWidth="802.0" layoutX="1.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="clubLogo" fitHeight="235.0" fitWidth="247.0" layoutX="524.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
+      <VBox layoutX="53.0" layoutY="57.0" prefHeight="137.0" prefWidth="320.0" style="-fx-background-color: #6edeeb;">
+         <children>
+            <HBox prefHeight="45.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="54.0" prefWidth="160.0" style="-fx-border-color: black;" text="Club Name">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nameLbl" alignment="CENTER" prefHeight="46.0" prefWidth="160.0" style="-fx-border-color: black;" text="Label">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="45.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="54.0" prefWidth="160.0" style="-fx-border-color: black;" text="Player Count">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="playerCountLbl" alignment="CENTER" prefHeight="46.0" prefWidth="160.0" style="-fx-border-color: black;" text="Label">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="45.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="54.0" prefWidth="160.0" style="-fx-border-color: black;" text="Total Salary">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalSalaryLbl" alignment="CENTER" prefHeight="46.0" prefWidth="160.0" style="-fx-border-color: black;" text="Label">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label id="text" fx:id="sloganLbl" alignment="CENTER" layoutX="61.0" layoutY="438.0" prefHeight="74.0" prefWidth="662.0" stylesheets="@../CSS/MainFile.Css" text="Label">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="64.0" layoutY="381.0" prefHeight="46.0" prefWidth="127.0" text="Club Motto:">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

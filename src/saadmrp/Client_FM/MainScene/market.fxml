@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="marketPane" prefHeight="544.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="saadmrp.Client_FM.MainScene.Market_Controller">
+   <children>
+      <Pane layoutX="-2.0" layoutY="-2.0" prefHeight="46.0" prefWidth="810.0" style="-fx-background-color: #52f783;" />
+      <TableView fx:id="marketTable" layoutY="44.0" prefHeight="500.0" prefWidth="173.0">
+         <columns>
+            <TableColumn fx:id="nameColumn" prefWidth="173.0" text="Name" />
+            <TableColumn fx:id="countryColumn" minWidth="0.0" prefWidth="71.199951171875" text="Country" visible="false" />
+            <TableColumn fx:id="ageColumn" prefWidth="48.80006408691406" text="Age" visible="false" />
+            <TableColumn fx:id="heightColumn" prefWidth="60.800048828125" text="Height" visible="false" />
+            <TableColumn fx:id="positionColumn" prefWidth="105.60003662109375" text="Position" visible="false" />
+            <TableColumn fx:id="numberColumn" prefWidth="75.99993896484375" text="Number" visible="false" />
+            <TableColumn fx:id="salaryColumn" prefWidth="130.4000244140625" text="Salary" visible="false" />
+            <TableColumn fx:id="priceColumn" prefWidth="139.99993896484375" text="Price" visible="false" />
+         </columns>
+      </TableView>
+      <Pane fx:id="playerDetailsPane" layoutX="174.0" layoutY="44.0" prefHeight="500.0" prefWidth="634.0" style="-fx-border-color: black; -fx-background-color: #082a45;">
+         <children>
+            <ImageView fx:id="playerImage" fitHeight="360.0" fitWidth="267.0" layoutX="351.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
+            <VBox layoutX="7.0" layoutY="7.0" prefHeight="360.0" prefWidth="335.0" style="-fx-background-color: #ADD8E6;">
+               <children>
+                  <HBox prefHeight="45.0" prefWidth="300.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="45.0" prefWidth="120.0" style="-fx-border-color: #781239;" text="Name">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="nameLbl" alignment="CENTER" prefHeight="46.0" prefWidth="216.0" style="-fx-border-color: #781239;" text="-----">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="45.0" prefWidth="300.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="45.0" prefWidth="120.0" style="-fx-border-color: #781239;" text="Country">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="countryLbl" alignment="CENTER" prefHeight="46.0" prefWidth="216.0" style="-fx-border-color: #781239;" text="-----">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="45.0" prefWidth="300.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="45.0" prefWidth="120.0" style="-fx-border-color: #781239;" text="Age">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ageLbl" alignment="CENTER" prefHeight="45.0" prefWidth="216.0" style="-fx-border-color: #781239;" text="-----">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="45.0" prefWidth="300.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="45.0" prefWidth="120.0" style="-fx-border-color: #781239;" text="Height">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="heightLbl" alignment="CENTER" prefHeight="45.0" prefWidth="216.0" style="-fx-border-color: #781239;" text="-----">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="45.0" prefWidth="300.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="45.0" prefWidth="120.0" style="-fx-border-color: #781239;" text="Positon">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="positionLbl" alignment="CENTER" prefHeight="45.0" prefWidth="216.0" style="-fx-border-color: #781239;" text="-----">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="45.0" prefWidth="300.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="45.0" prefWidth="120.0" style="-fx-border-color: #781239;" text="Number">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="numberLbl" alignment="CENTER" prefHeight="45.0" prefWidth="216.0" style="-fx-border-color: #781239;" text="-----">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="45.0" prefWidth="300.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="45.0" prefWidth="120.0" style="-fx-border-color: #781239;" text="Salary">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="salaryLbl" alignment="CENTER" prefHeight="45.0" prefWidth="216.0" style="-fx-border-color: #781239;" text="-----">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="45.0" prefWidth="300.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="45.0" prefWidth="120.0" style="-fx-border-color: #781239;" text="Price">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="priceLbl" alignment="CENTER" prefHeight="45.0" prefWidth="216.0" style="-fx-border-color: #781239;" text="-----">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <JFXButton id="button" fx:id="buyBtn" layoutX="259.0" layoutY="407.0" onAction="#buyPressed" prefHeight="25.0" prefWidth="105.0" stylesheets="@../CSS/MainFile.Css" text="Buy">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
