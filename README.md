@@ -12,6 +12,6 @@ As proper database implementation was not part of project criteria all data was 
 Project Demo
 --------------------
 
+https://github.com/Saadmrp1038/Football_Manager/assets/74107472/30e28e8e-3a57-4e8e-ad28-d0a335c51f2f
 
-https://github.com/Saadmrp1038/Football_Manager/assets/74107472/432ce0de-d6ec-4099-9f50-00073a93cb68
 
